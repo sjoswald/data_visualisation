@@ -1,0 +1,54 @@
+---------------------------------------
+COVID-19 DEATH TREND DATA VISUALISATION
+---------------------------------------
+
+The goal of this project is to provide a bespoke visualisation of COVID-19 death data 
+for the use of junior government officials looking to make decisions based on the current 
+death trends.
+
+The project has been produced in Python 3.9.
+
+REQUIREMENTS 
+---------------------------------------
+
+* calendar -- pip install calendar
+* pandas -- pip install pandas
+* pandas.io.json -- pip install pandas.io.json
+* plotly -- pip install plotly
+* plotly.express -- pip install plotly-express
+* plotly.graph_objects 
+* dash -- pip install dash
+* json -- pip install json
+* geojson_rewind -- pip install geojson-rewind
+
+OTHER REFERENCES 
+---------------------------------------
+
+EXTERNAL STYLESHEET: https://codepen.io/chriddyp/pen/bWLwgP.css
+Parmer, C., 2022. Dash Styleguide. [online] codepen.io. 
+	Available at: <https://codepen.io/chriddyp/pen/bWLwgP> [Accessed 5 January 2022].
+ 
+
+NHSE CSV SOURCE: nhse_total_deaths_by_region.csv
+Greater London Authority. (2021) nhse_total_deaths_by_region.csv - data.gov.uk. [online] Data.gov.uk. 
+	Available at: https://data.gov.uk/dataset/43b2334a-6970-4e71-a27a-630dc4901e04/coronavirus-covid-19-deaths	[Accessed 3 December 2021].
+* The version of this csv used in the programme has been modified to only include data from August, September and October 2021, 
+	however the code has been structured to function with 12 months of data.
+	
+GEOJSON SOURCE: NHS_England_Regions_(April_2020)_Boundaries_EN_BGC.geojson
+Office for National Statistics (2020) Data.gov.uk: NHS England Regions (April 2020) Boundaries EN BGC - data.gov.uk. 
+	Available from: https://data.gov.uk/dataset/66a7bb97-3da6-4e19-975b-1f0784909cd5/nhs-england-regions-april-2020-boundaries-en-bgc [Accessed 28 December 2021].
+
+RUNNING THE PROGRAMME
+---------------------------------------
+
+Open the Powershell Window within the programme folder
+	(Ctrl + Right-click and choose "Open Powershell Window here")
+
+Type: python cetm25_stacy_oswald.py
+
+Then press enter. This will initialise the dash window.
+
+Open your browser and navigate to http://127.0.0.1:8050/
+
+This will then load the data dashboard webpage ready for use
